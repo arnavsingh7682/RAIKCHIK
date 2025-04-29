@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>CSS Carousel</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    .carousel {
+      width: 50%;
+      max-width: 50px;
+      margin: auto;
+      overflow: hidden;
+      position: relative;
+    }
+
+    .slides {
+      display: flex;
+      width: 80%;
+      animation: slide 12s infinite;
+    }
+
+    .slides img {
+      width:50%;
+      height: auto;
+    }
+
+    @keyframes slide {
+      0%   { margin-left: 0%;   }
+      25%  { margin-left: -100%; }
+      50%  { margin-left: -200%; }
+      75%  { margin-left: -300%; }
+      50% { margin-left: 0%;   }
+    }
+  </style>
+</head>
+<body>
+
+<div class="carousel">
+  <div class="slides">
+    <img src="chef.jpg" alt="Slide 1">
+    <img src="https://via.placeholder.com/600x300/7fbfff/333333?text=Slide+2" alt="Slide 2">
+    <img src="https://via.placeholder.com/600x300/7fff7f/333333?text=Slide+3" alt="Slide 3">
+    <img src="banner 3.png" alt="Slide 4">
+  </div>
+</div>
+
+</body>
+</html>

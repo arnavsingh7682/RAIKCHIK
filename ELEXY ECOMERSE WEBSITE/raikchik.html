@@ -1,0 +1,362 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RAIKCHICK - Order Your Custom Chicken</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <style>
+
+/* pop up front screen */
+
+        .popup {
+          position: fixed;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          background: rgba(0,0,0,0.5);
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          z-index: 9999;
+        }
+    
+        .popup-content {
+          background: white;
+          padding: 30px;
+          border-radius: 10px;
+          text-align: center;
+          position: relative;
+          width: 300px;
+          box-shadow: 0 0 15px rgba(0,0,0,0.3);
+        }
+    
+        .popup-content img {
+          width: 200px;
+          height: auto;
+          margin: 10px 0;
+          object-fit: contain;
+        }
+    
+        .close-btn {
+          position: absolute;
+          top: 10px;
+          right: 15px;
+          font-size: 24px;
+          font-weight: bold;
+          cursor: pointer;
+        }
+    
+        #main-content {
+          padding: 20px;
+        }
+
+      </style>
+</head>
+<body>
+
+<!-- POP UP main screen -->
+
+<div id="popup" class="popup">
+    <div class="popup-content">
+      <span class="close-btn" onclick="closePopup()">&times;</span>
+      <h2>why you Fear<br>RAIKCHIK is Here</h2>
+      <img src="chef.jpg" alt="Food Image">
+      <H2>RAIKCHIK</H2>
+    </div>
+  </div>
+
+ 
+
+  <!-- JAVASCRIPT -->
+  <script>
+    function closePopup() {
+      document.getElementById("popup").style.display = "none";
+    }
+  </script>
+
+
+
+<!-- main code of raikchik -->
+
+    <header class="header">
+        <div class="logo">
+            <img src="logo2.png" alt="RAIKCHICK Logo">
+        
+        </div>
+        
+        
+        
+        <nav class="navbar">
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#menu">Menu</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="#Download">Download</a></li>
+            </ul>
+            
+
+
+              <div class="search-container">
+                <input type="text" placeholder="Search for chicken, spices, combos..." class="search-input">
+                <button class="search-button">🔍</button>
+                
+            </div>
+            
+        </nav>
+        <button class="login-btn">Login</button>
+       
+    </header>
+
+    <section class="hero">
+        <h1>Welcome to RAIKCHICK</h1>
+        <h4>"Founders Of Raikchick"</h4>
+        <h4>Alka Raikwar & Thakur Aayush Singh</h4>
+        <p>Your favorite destination for customizable chicken flavors, delivered fresh to your doorstep!</p>
+        <button class="order-btn">Order Now</button>
+    </section>
+
+   
+   
+   
+   
+
+
+<!-- our menu ke niche 3 round pics ka code -->
+    <section id="menu" class="menu">
+    
+       
+<div class="categories">
+    <div class="category">
+        <img src="vejpamplet.jpg" alt="Faishon">
+        <h5></h3>
+      </div>
+      
+      <div class="category">
+        <img src="nonvej.jpg" alt="Faishon">
+        <h5></h3>
+      </div>
+      <div class="category">
+        <img src="scanner.jpg" alt="Faishon">
+       
+        <h5></h3>
+      
+        
+      </div>
+      <div class="category">
+        <img src="veg.webp" alt="Faishon">
+       
+        <h5></h3>
+      </div>
+
+    
+    </div>
+</div>
+     
+
+
+
+
+
+
+<!-- our menu ke niche bala link button ka code hai ye sab -->
+<div class="categories">
+
+    <div class="category-box">
+       
+        <a href="pamplate.html">
+        <p style="color:black;background-color: azure;padding:10px; ">Menu</p>
+      </a> 
+    </div>  
+    <div class="category-box">
+        <a href="pamplate.html"></a>
+        <p style="color:black; ">.</p>
+      </a>
+      </div>
+    
+    <div class="category-box">
+        <a href="pamplate.html">
+            <p   style="color:black; ">Non-Veg</p>
+        </a> 
+        </div>
+       
+        
+        <div class="category-box">
+            <a href="scanner.html">
+            <p style="color:black; ">scan to Order</p>
+          </a>
+          </div>
+          <div class="category-box">
+            <a href="pamplate.html"></a>
+            <p style="color:black; ">.</p>
+          </a>
+          </div>
+    <div class="category-box">
+      <a href="pamplate.html">
+      <p style="color:black; ">Veg</p>
+    </a>
+    </div>
+    
+    </div>
+  </div>
+
+     
+  <h2>Our Menu</h2>
+     
+     
+     
+     <button class="order-btn">NON-VEG</button>
+
+
+        <div class="menu-grid">
+ 
+<!-- chicken menu -->
+            <div class="menu-item">
+                <img src="jeera rice chicken.webp">
+                <h3>RAIKCHICK ROYAL FEST</h3>
+               
+                    <h4>5 Roti (Butter brushed) ,Full Butter Chicken Curry Full Jeera Rice (Butter wala) , salad along with  COKE</h4>
+                   
+                <H3 >239/-</h3>
+                <button class="order-item-btn">Add to Cart</button>
+            </div>
+            <div class="menu-item">
+                <img src="https://th.bing.com/th/id/OIP.3LlLX-8be6dkNWKQ7CrWFgHaDt?rs=1&pid=ImgDetMain" alt="Masala Chicken">
+                <h3>BUTTER BITE COMBO</h3>
+                <h4>3 Roti,  Medium Butter Chicken Curry,  Medium Jeera Rice, Salad, Coke  </h4>
+                  
+                <H3 >199/-</h3>
+
+                <button class="order-item-btn">Add to Cart</button>
+            </div>
+            <div class="menu-item">
+                <img src="jeera rice chicken.webp">
+                <h3>MINI COMBO </h3>
+                   
+                    <h4>3 Roti,  Half Butter Chicken Curry (light portion),Half Jeera Rice,  Small Salad
+                    </h4>
+                <H3 >149/-</h3>
+                <button class="order-item-btn">Add to Cart</button>
+            </div>
+            <div class="menu-item">
+                <img src="matipot spice chicken.jpeg">
+              
+                <h3>spice special</p>
+                  <h3> 149/-</h3>
+                
+                <button class="order-item-btn">Add to Cart</button>
+            </div>
+            <div class="menu-item">
+                <img src="LEG.jpg">
+                <H3> SPICE ROST</H3>
+                <H3>149/-</H3>
+                <button class="order-item-btn">Add to Cart</button>
+            </div> 
+<!-- egg menu -->
+
+            <div class="menu-item">
+                <img src="EGGCURRY.webp">
+                <h3>DELIGHT EGG CURRY</h3>
+               <H3>69/99 /-</H3>
+                <button class="order-item-btn">Add to Cart</button>
+            </div>
+
+        
+            <div class="menu-item">
+                <img src="OMLET.jpg">
+                <h3> OMLET 2 EGG           </h3>
+               <H3> 39/-</H3>
+                <button class="order-item-btn">Add to Cart</button>
+            </div>
+
+            <div class="menu-item">
+                <img src="BHURJI.jpg">
+                <h3>EGG BHURJI 2 EGG</h3>
+                <h3>39/-</h3>
+                <button class="order-item-btn">Add to Cart</button>
+            </div>
+          
+        </div>
+        </section>  
+    
+<!-- VEG MENU LISTA -->
+        <section id="menu" class="menu">
+        <button class="order-btn">VEG</button>
+        <div class="menu-grid">
+
+
+
+            <div class="menu-item">
+                <img src="PASTA.jpeg">
+                <h3> SPICE PASTA+COKE</h3>
+                <h3>69/-</h3>
+                <button class="order-item-btn">Add to Cart</button>
+            </div>
+
+            <div class="menu-item">
+                <img src="MAGGI.jpg">
+                <H3>     SPICE   MAGGI</H3>
+                <H3>     29/-</H3>
+                
+                <button class="order-item-btn">Add to Cart</button>
+            </div>
+
+
+            <div class="menu-item">
+                <img src="Litti-Chokha.jpg">
+                <H3>BIHARI  LITTI-CHOKHA </H3>
+                <H3>  4 PCS</H3>
+                <H3>     99/-</H3>
+                
+                <button class="order-item-btn">Add to Cart</button>
+            </div>
+            
+            <div class="menu-item">
+                <img src="CHAUMIN.jpg">
+                <H3>     SPICE CHAUMIN WITH COKE </H3>
+                <H3>     89/-</H3>
+                
+                <button class="order-item-btn">Add to Cart</button>
+            </div>
+
+
+
+
+            <!-- <div class="menu-item">
+                <img src="https://th.bing.com/th/id/OIP.o1RDF54_s-PrfUaXtpRJIwHaEo?rs=1&pid=ImgDetMain">
+                <h3>Grilled Chicken</h3>
+                <p>Perfectly grilled to perfection.</p>
+                <button class="order-item-btn">Add to Cart</button>
+            </div> -->
+            <!-- Add more items as needed -->
+            
+        </div>
+    </section>
+
+    <section id="about" class="about">
+        <h2>About RAIKCHICK</h2>
+        <p>RAIKCHICK is not just a restaurant; it's a movement to redefine how you enjoy chicken. Customize your flavors or go for our global signature Masala Chicken. With fast delivery and fresh ingredients, we promise you an unforgettable experience.</p>
+    </section>
+<!-- 
+    <section id="contact" class="contact">
+        <h2>Contact Us</h2>
+        <form action="#" method="post">
+            <input type="text" placeholder="Your Name" required>
+            <input type="email" placeholder="Your Email" required>
+            <textarea placeholder="Your Message" rows="5" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+    </section> -->
+
+    <footer class="footer">
+        <p>&copy; 2025 RAIKCHICK. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>
+
+
